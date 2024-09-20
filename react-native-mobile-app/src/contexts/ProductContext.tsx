@@ -23,7 +23,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await import('./assets/products.json');
+      const response = await import('../../assets/products.json');
       setProducts(response.default);
     };
     fetchProducts();

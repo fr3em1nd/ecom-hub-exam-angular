@@ -1,8 +1,0 @@
-<mat-list>
-    <mat-list-item *ngFor="let product of products">
-      <div *ngIf="!products.length">Loading...</div>
-      <span>{{ product.name }} - ${{ product.price }}</span>
-      <button mat-button (click)="goToDetails(product.id)">View Details</button>
-    </mat-list-item>
-  </mat-list>
-  

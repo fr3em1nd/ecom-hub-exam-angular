@@ -1,0 +1,12 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust spacing between cards */
+  }
+  
+  .product-card {
+    flex: 1 1 calc(25% - 16px); /* Adjust percentage for card size */
+    max-width: calc(25% - 16px); /* Ensure the card does not exceed this width */
+    box-sizing: border-box; /* Ensure padding and margins are included in total width */
+  }
+  

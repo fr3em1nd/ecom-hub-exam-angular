@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService, Product } from '../product.service';
 
 @Component({
@@ -11,7 +11,8 @@ export class ProductDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router // Inject Router
   ) {}
 
   ngOnInit(): void {
@@ -19,5 +20,14 @@ export class ProductDetailComponent implements OnInit {
     this.productService.getProductById(id).subscribe(data => {
       this.product = data;
     });
+  }
+
+  goBack(): void {
+    this.router.navigate(['/products']); // Navigate back to product list
+  }
+  
+  getImageWithRandomNumber(imageUrl: string): string {
+    const randomNum = Math.floor(Math.random() * 10000); // Generate a random number
+    return `${imageUrl}?rand=${randomNum}`; // Append it to the URL
   }
 }

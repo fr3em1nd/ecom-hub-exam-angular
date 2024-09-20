@@ -1,5 +1,9 @@
-<nav>
-  <a routerLink="/products">Product List</a>
-</nav>
+<mat-toolbar color="primary">
+  <span>My Shop</span>
+  <span class="spacer"></span>
+  <a mat-button routerLink="/products">Products</a>
+</mat-toolbar>
 
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

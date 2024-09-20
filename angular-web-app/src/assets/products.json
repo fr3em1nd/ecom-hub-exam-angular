@@ -1,17 +1,352 @@
 [
   {
     "id": 1,
-    "name": "Product 1",
+    "name": "Wireless Headphones",
     "price": 100,
-    "description": "Description for Product 1",
-    "image": "assets/images/product1.jpg"
+    "description": "High-quality wireless headphones with noise cancellation.",
+    "image": "https://picsum.photos/200"
   },
   {
     "id": 2,
-    "name": "Product 2",
+    "name": "Smartphone X200",
     "price": 200,
-    "description": "Description for Product 2",
-    "image": "assets/images/product2.jpg"
+    "description": "Latest smartphone with cutting-edge features.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 3,
+    "name": "4K Ultra HD TV",
+    "price": 150,
+    "description": "Stunning picture quality with vibrant colors.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 4,
+    "name": "Bluetooth Speaker",
+    "price": 250,
+    "description": "Portable speaker with deep bass and long battery life.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 5,
+    "name": "Gaming Laptop Pro",
+    "price": 300,
+    "description": "High-performance gaming laptop with advanced graphics.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 6,
+    "name": "Smartwatch Series 5",
+    "price": 180,
+    "description": "Stylish smartwatch with fitness tracking capabilities.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 7,
+    "name": "Action Camera 4K",
+    "price": 220,
+    "description": "Capture stunning videos in 4K resolution.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 8,
+    "name": "Wireless Earbuds",
+    "price": 125,
+    "description": "Comfortable earbuds with superior sound quality.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 9,
+    "name": "Portable SSD 1TB",
+    "price": 175,
+    "description": "Fast and reliable storage for all your data.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 10,
+    "name": "Smart Home Hub",
+    "price": 90,
+    "description": "Centralize your smart devices with ease.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 11,
+    "name": "Gaming Mouse RGB",
+    "price": 210,
+    "description": "Ergonomic gaming mouse with customizable lighting.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 12,
+    "name": "Mechanical Keyboard",
+    "price": 160,
+    "description": "Responsive keyboard designed for gamers.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 13,
+    "name": "Virtual Reality Headset",
+    "price": 140,
+    "description": "Experience immersive virtual reality gaming.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 14,
+    "name": "Noise Cancelling Earbuds",
+    "price": 190,
+    "description": "Enjoy music without distractions.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 15,
+    "name": "Fitness Tracker",
+    "price": 230,
+    "description": "Monitor your health and fitness goals.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 16,
+    "name": "Streaming Device",
+    "price": 240,
+    "description": "Stream your favorite shows and movies in HD.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 17,
+    "name": "Tablet Pro 12\"",
+    "price": 130,
+    "description": "Versatile tablet for work and play.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 18,
+    "name": "HDMI Splitter",
+    "price": 115,
+    "description": "Split your HDMI signal to multiple displays.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 19,
+    "name": "Digital Camera",
+    "price": 105,
+    "description": "Capture life's moments with stunning clarity.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 20,
+    "name": "Smart LED Bulbs",
+    "price": 185,
+    "description": "Control your lights from anywhere with your smartphone.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 21,
+    "name": "Home Security Camera",
+    "price": 210,
+    "description": "Keep your home safe with high-definition video.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 22,
+    "name": "USB-C Hub",
+    "price": 170,
+    "description": "Expand your device's connectivity options.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 23,
+    "name": "Wireless Charger",
+    "price": 155,
+    "description": "Charge your devices without the hassle of cables.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 24,
+    "name": "Smart Refrigerator",
+    "price": 145,
+    "description": "A refrigerator that connects to your smart home.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 25,
+    "name": "Smart Thermostat",
+    "price": 165,
+    "description": "Control your home's temperature remotely.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 26,
+    "name": "Bluetooth Tracker",
+    "price": 175,
+    "description": "Never lose your items again with this smart tracker.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 27,
+    "name": "Wi-Fi Range Extender",
+    "price": 195,
+    "description": "Extend your Wi-Fi coverage for better connectivity.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 28,
+    "name": "Voice Assistant Speaker",
+    "price": 110,
+    "description": "Smart speaker with voice control functionality.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 29,
+    "name": "Smart Door Lock",
+    "price": 125,
+    "description": "Secure your home with a smart door lock.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 30,
+    "name": "Laptop Stand",
+    "price": 135,
+    "description": "Ergonomic stand for better laptop use.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 31,
+    "name": "Portable Projector",
+    "price": 150,
+    "description": "Project your favorite media anywhere you go.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 32,
+    "name": "Electric Toothbrush",
+    "price": 165,
+    "description": "Achieve a superior clean with electric brushing.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 33,
+    "name": "Smart Scale",
+    "price": 170,
+    "description": "Track your weight and body composition smartly.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 34,
+    "name": "Air Purifier",
+    "price": 180,
+    "description": "Breathe easier with a high-efficiency air purifier.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 35,
+    "name": "Wireless Home Security System",
+    "price": 190,
+    "description": "Protect your home with a complete security system.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 36,
+    "name": "VR Fitness Game",
+    "price": 200,
+    "description": "Get fit while having fun in virtual reality.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 37,
+    "name": "Smart Wi-Fi Router",
+    "price": 220,
+    "description": "Stay connected with fast and reliable internet.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 38,
+    "name": "Electric Kettle",
+    "price": 230,
+    "description": "Boil water quickly with this stylish kettle.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 39,
+    "name": "Streaming Webcam",
+    "price": 240,
+    "description": "High-definition webcam for streaming and video calls.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 40,
+    "name": "Mini Drone",
+    "price": 250,
+    "description": "Capture aerial footage with this easy-to-fly drone.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 41,
+    "name": "Smart Air Conditioner",
+    "price": 260,
+    "description": "Control your home's temperature from your phone.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 42,
+    "name": "Electric Scooter",
+    "price": 300,
+    "description": "Eco-friendly transport solution for short trips.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 43,
+    "name": "Smart Coffee Maker",
+    "price": 220,
+    "description": "Brew your coffee with voice commands.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 44,
+    "name": "Wireless Security Camera",
+    "price": 210,
+    "description": "Monitor your property wirelessly with ease.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 45,
+    "name": "Smart Vacuum Cleaner",
+    "price": 280,
+    "description": "Automatic vacuum cleaner that navigates your home.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 46,
+    "name": "Laptop Backpack",
+    "price": 70,
+    "description": "Stylish backpack designed for laptops.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 47,
+    "name": "Smartphone Gimbal",
+    "price": 150,
+    "description": "Stabilize your smartphone for perfect shots.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 48,
+    "name": "Solar Power Bank",
+    "price": 40,
+    "description": "Charge your devices using solar energy.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 49,
+    "name": "Portable Bluetooth Printer",
+    "price": 180,
+    "description": "Print photos directly from your smartphone.",
+    "image": "https://picsum.photos/200"
+  },
+  {
+    "id": 50,
+    "name": "Smart Glasses",
+    "price": 350,
+    "description": "Augmented reality glasses for a new experience.",
+    "image": "https://picsum.photos/200"
   }
 ]
-

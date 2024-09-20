@@ -9,10 +9,10 @@
   
   .card-content {
     display: flex;
-    align-items: center; /* Center the items vertically */
+    align-items: center; 
   }
   
   .card-content img {
-    margin-right: 16px; /* Add some space between the image and the text */
+    margin-right: 16px;  
   }
   

@@ -12,7 +12,7 @@ export class ProductDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
-    private router: Router // Inject Router
+    private router: Router  
   ) {}
 
   ngOnInit(): void {
@@ -23,11 +23,11 @@ export class ProductDetailComponent implements OnInit {
   }
 
   goBack(): void {
-    this.router.navigate(['/products']); // Navigate back to product list
+    this.router.navigate(['/products']);  
   }
-  
+
   getImageWithRandomNumber(imageUrl: string): string {
-    const randomNum = Math.floor(Math.random() * 10000); // Generate a random number
-    return `${imageUrl}?rand=${randomNum}`; // Append it to the URL
+    const randomNum = Math.floor(Math.random() * 10000);  
+    return `${imageUrl}?rand=${randomNum}`; 
   }
 }

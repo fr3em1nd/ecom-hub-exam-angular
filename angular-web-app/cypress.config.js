@@ -11,6 +11,7 @@ module.exports = defineConfig({
       framework: "angular",
       bundler: "webpack",
     },
-    specPattern: "**/*.cy.ts",
+    supportFile: 'cypress/support/e2e.js', // Adjust if necessary
+    specPattern: 'cypress/e2e/**/*.js',
   },
 });

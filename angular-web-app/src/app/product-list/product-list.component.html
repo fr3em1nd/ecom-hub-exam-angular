@@ -1,18 +1,24 @@
-<h2>Product List</h2>
-<div class="product-grid">
-<div *ngFor="let product of products" class="product-card">
-   
-  <mat-card >
-    <mat-card-header>
-      <mat-card-title>{{ product.name }}</mat-card-title>
-      <mat-card-subtitle>${{ product.price }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>{{ product.description }}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button color="primary" mat-button (click)="viewDetails(product.id)">View Details</button>
-    </mat-card-actions>
-  </mat-card>
+<h2>Product</h2>
+
+<div *ngIf="isLoading">
+  <mat-spinner color="primary"></mat-spinner>
+  <p>Loading products...</p>
 </div>
+
+<div class="product-grid" *ngIf="!isLoading">
+  <div *ngFor="let product of products" class="product-card">
+
+    <mat-card >
+      <mat-card-header>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+        <mat-card-subtitle>${{ product.price }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ product.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button color="primary" mat-button (click)="viewDetails(product.id)">View Details</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>

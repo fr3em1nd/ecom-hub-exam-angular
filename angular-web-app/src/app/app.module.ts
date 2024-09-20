@@ -5,7 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule } from '@angular/material/toolbar'; // Import MatToolbarModule
+import { MatToolbarModule } from '@angular/material/toolbar';  
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +28,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    MatToolbarModule // Add here
+    MatToolbarModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

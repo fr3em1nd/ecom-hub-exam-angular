@@ -25,7 +25,7 @@ export class ProductDetailComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['/products']);  
   }
-
+// Since i am using a random image generator, i added a randomizer so it will display random image just  to demonstrate the images.
   getImageWithRandomNumber(imageUrl: string): string {
     const randomNum = Math.floor(Math.random() * 10000);  
     return `${imageUrl}?rand=${randomNum}`; 

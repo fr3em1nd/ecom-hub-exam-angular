@@ -1,0 +1,9 @@
+.product-card {
+    margin: 16px;
+  }
+  
+  mat-card {
+    width: 300px;
+    display: inline-block;
+  }
+  

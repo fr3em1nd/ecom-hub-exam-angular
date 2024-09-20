@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
-
 
 export interface Product {
   id: number;
@@ -16,18 +15,23 @@ export interface Product {
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = 'assets/products.json'; // Adjust path as necessary
+  private apiUrl = 'assets/products.json';
+  private productsSubject = new BehaviorSubject<Product[]>([]);
+  products$ = this.productsSubject.asObservable();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.fetchProducts();
+  }
 
-  getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.apiUrl);
+  private fetchProducts(): void {
+    this.http.get<Product[]>(this.apiUrl).subscribe(data => {
+      this.productsSubject.next(data);
+    });
   }
 
   getProductById(id: number): Observable<Product | undefined> {
-    return this.http.get<Product[]>(this.apiUrl).pipe(
-      map((products: Product[]) => products.find((product: Product) => product.id === id))
+    return this.products$.pipe(
+      map(products => products.find(product => product.id === id))
     );
   }
-  
 }

@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit {
   constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit(): void {
-    this.productService.getProducts().subscribe(data => {
+    this.productService.products$.subscribe(data => {
       this.products = data;
     });
   }

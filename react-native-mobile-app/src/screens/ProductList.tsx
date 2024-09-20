@@ -21,8 +21,8 @@ const ProductList: React.FC = () => {
       <Text style={styles.name}>{item.name}</Text>
       <Text style={styles.price}>${item.price}</Text>
       <Text>{item.description}</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('ProductDetail', { product: item })}>
-        <Button title="View Details" />
+      <TouchableOpacity >
+        <Button onPress={() => navigation.navigate('ProductDetail', { product: item })} title="View Details" />
       </TouchableOpacity>
     </View>
   );

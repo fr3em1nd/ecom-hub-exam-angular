@@ -23,7 +23,8 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ route }) => {
 
   return (
     <View style={styles.container}>
-      <Image source={{ uri: product.image }} style={styles.image} />
+     <Image source={{ uri: `${product.image}?random=${Math.random()}` }} style={styles.image} />
+
       <Text style={styles.name}>{product.name}</Text>
       <Text style={styles.price}>${product.price}</Text>
       <Text>{product.description}</Text>
